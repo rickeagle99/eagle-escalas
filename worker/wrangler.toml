@@ -1,0 +1,12 @@
+name = "eagle-escalas-newsky"
+main = "src/index.js"
+compatibility_date = "2026-08-08"
+
+# Configure the production secret outside Git:
+# npx wrangler secret put NEWSKY_API_TOKEN
+
+[vars]
+NEWSKY_BASE_URL = "https://newsky.app/api/airline-api"
+
+# After deploying the Worker, set this URL in the GitHub Pages frontend:
+# https://<worker-subdomain>.workers.dev
